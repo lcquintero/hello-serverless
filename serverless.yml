@@ -1,4 +1,4 @@
-service: hello-serverless
+service: ServiceTestLauraQuintero
 
 provider:
   name: aws
