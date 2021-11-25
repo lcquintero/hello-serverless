@@ -1,6 +1,6 @@
 pipeline {
 	agent any
-	stages { 
+	stages ('build sin test') { 
 		steps { 
 			nodejs (nodeJSInstallationName: 'nodejs'){
 				sh 'npm install'
