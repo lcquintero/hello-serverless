@@ -1,6 +1,7 @@
 pipeline {
 	agent any
-	stages ('build sin test') { 
+	stages {
+		stage ('build sin test') { 
 		steps { 
 			nodejs (nodeJSInstallationName: 'nodejs'){
 				sh 'npm install'
@@ -28,3 +29,4 @@ pipeline {
 			}
 		}
 	}
+}
